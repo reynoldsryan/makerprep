@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 6 Exercise 8</title>
+</head>
+<body>
+  <div id="greeting"></div>
+  <p>It is so nice to have a visitor from <span id='hometown'></span>!</p>
+  <div>
+    <a href="../../index.html">Back to homepage.</a>
+  </div>
+
+<script>
+var visitorName = prompt('What is your name?');
+var welcomeMessage = "Hi " + visitorName + " welome to my page!"
+document.querySelector('#greeting').textContent = welcomeMessage;
+var town = prompt ('What is your hometown?');
+document.querySelector('#hometown').textContent = town;
+</script>
+</body>
+</html>

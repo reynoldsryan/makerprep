@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 6 Exercise 9</title>
+</head>
+<body>
+  <div id="source">Source.</div>
+  <div id="destination">Destination.</div>
+  <div id="swap1"></div>
+  <div id="swap2"></div>
+  <div>
+    <a href="../../index.html">Back to homepage.</a>
+  </div>
+  <script>
+var a = document.querySelector('#source').textContent;
+var b = document.querySelector('#destination').textContent;
+var c = a;
+a = b;
+b = c;
+document.querySelector('#swap1').textContent = a
+document.querySelector('#swap2').textContent = b;
+  </script>
+</body>
+</html>

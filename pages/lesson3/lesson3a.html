@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post</title>
+  <style>
+  h1 {
+    color:blue;
+  }
+
+  h2 {
+    color:cyan;
+  }
+
+  h1, h2, p {
+    font-family:fantasy;
+  }
+  #header {
+    background-color: yellow;
+    border: 5px solid red;
+    padding: 10px;
+  }
+  #navbar {
+    background-color: pink;
+    width: 100px;
+    padding:10px 20px;
+    margin-top:20px;
+    text-align:center;
+  }
+  #content {
+    background-color: lightgrey;
+    padding:10px 10px 20px;
+    margin-top:20px;
+  }
+  #img {
+    border:5px solid blue;
+    margin-top:20px;
+    text-align:center;
+    padding:100px 0px;
+    border-radius:100%;
+  }
+  #footer {
+    background-color: aqua;
+    margin-top:300px;
+    width: 100px;
+    padding:10px;
+    text-align:center;
+  }
+  #container{
+    max-width:960px;
+    margin: 0 auto;
+  }
+}
+.important {
+  color:red;
+  font-size: 125%;
+  font-weight: bold;
+}
+.unimportant {
+  color:purple;
+  font-size: 75%;
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>What I Ate Today!</h1>
+      <hr>
+    </div>
+    <div id="navbar">
+      <p>Breakfast</p>
+      <p>Lunch</p>
+      <p>Dinner</p>
+    </div>
+    <div id="content">
+      <h2>Breakfast</h1>
+        <p><span class="unimportant">I had </span><span class="important">eggs, toast and a banana.</span></p>
+        <h2>Lunch</h2>
+        <p><span class="unimportant">I had </span><span class="important">a sandwich, avocado and pita chips with hummus.</span></p>
+        <h2>Dinner</h2>
+        <p><span class="unimportant">I don't know! </span><span class="important">I haven't had it yet!</span></p>
+      </div>
+      <div id="img">
+        <img src="http://blogs.plos.org/obesitypanacea/files/2014/10/sandwich.jpg">
+      </div>
+      <div id="footer">
+        <p>All rights reserved.</p>
+      </div>
+      <div>
+        <a href="../../index.html">Back to homepage.</a>
+      </div>
+    </div>
+  </body>
+  </html>

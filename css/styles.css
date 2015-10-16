@@ -1,0 +1,24 @@
+body {
+  background-color: yellow;
+}
+h1 {
+  text-align:center;
+  background-color:mediumblue;
+  color:rgb(0,255,255);
+  font-size: 225%;
+}
+p {
+  background-color:red;
+  color:#0022FF;
+  font-family: courier;
+}
+.important {
+  font-family: sans-serif;
+}
+#first {
+  font-size:30px;
+}
+#second {
+  font-size:20px;
+  text-transform: lowercase;
+}
