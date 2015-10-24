@@ -1,16 +1,3 @@
-var processorSpeedsInHZ = [
-  200000000, 2600000000, 2300000000, 2500000000, 2200000000, 10
-];
-var fastest = reduce(processorSpeedsInHZ, function(previousEl, currentEl) {
-  if(currentEl > previousEl) {
-    return currentEl;
-  } else {
-    return previousEl;
-  }
-});
-
-console.log(fastest/1000000000 + " GHz");
-
 // testArray = [1,2,3,4,5];
 // function addOne(currentEl) {
 // 	console.log(currentEl + 1);
@@ -168,3 +155,16 @@ var factorial = reduce(upToNumber, function(previousEl, currentEl) {
 });
 
 console.log(factorial);
+
+var processorSpeedsInHZ = [
+  200000000, 2600000000, 2300000000, 2500000000, 2200000000, 10
+];
+var fastest = reduce(processorSpeedsInHZ, function(previousEl, currentEl) {
+  if(currentEl > previousEl) {
+    return currentEl;
+  } else {
+    return previousEl;
+  }
+});
+
+console.log(fastest/1000000000 + " GHz");
