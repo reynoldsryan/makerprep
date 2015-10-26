@@ -112,14 +112,13 @@ function contains(collection, target) {
   }, isInCollection);
 }
 
-console.log(contains([1,2,3,4,5], 5));
+console.log(contains(["ryan", "gus", "david", "lucas"], "gus"));
 
 
 function containsFilter(collection, target) {
   var someArray = filter(collection, function(currentEl){
     return currentEl === target;
   });
-  console.log(someArray);
   if(someArray.length > 0) {
     return true;
   } else {
@@ -141,14 +140,14 @@ var numArray = testNumbers.split(" ").map(Number);
 var palindromeArray = map(numArray, function(currentEl) {
   while(currentEl <= 1000000) {
     currentEl++;
-    currentEl = currentEl.toString();
-    currentEl = currentEl.split("");
-    var copyOfCurrentEl = currentEl.slice();
-    var reverseEl = copyOfCurrentEl.reverse();
-    currentEl = currentEl.join("");
-    currentEl = parseInt(currentEl);
-    reverseEl = reverseEl.join("");
-    reverseEl = parseInt(reverseEl);
+    currentEl = currentEl.toString().split("");
+    // currentEl = currentEl.split("");
+    var reverseEl = currentEl.slice().reverse();
+    // var reverseEl = copyOfCurrentEl.reverse();
+    currentEl = parseInt(currentEl.join(""));
+    // currentEl = parseInt(currentEl);
+    reverseEl = parseInt(reverseEl.join(""));
+    // reverseEl = parseInt(reverseEl);
     if(currentEl === reverseEl) {
       return currentEl;
     }
@@ -196,7 +195,6 @@ each(postClicks, function(currentEl) {
   } else if (currentEl <= startArray.length && startArray[currentEl - 1] === 1) {
     startArray[currentEl - 1] = 0;
   }
-
   console.log(startArray);
 });
 
